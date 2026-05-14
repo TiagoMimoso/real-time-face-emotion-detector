@@ -12,7 +12,8 @@ Run 'demo.ipynb' file
 
 # Results
 
-TODO
+Metrics of the models can also be followed in the 'demo.ipynb' file.
+Evaluation between both arquitectures and tuned models are still in progress
 
 # Information about the project
 
@@ -32,9 +33,9 @@ The emotions covered in the dataset are:
 
 ## Model architecture
 
-The model choosen was VGG16.
+At the moment, we have implemented two models. VGG16 and ResNet18.
 
-A batch normalization layer was added after all convolutional and dense layers in order to accelerate convergence and reduce overfitting.
+A batch normalization layer was added after all convolutional and dense layers in order to accelerate convergence and reduce overfitting for the VGG16 model.
 
 A dropout layer was also added before the last dense layer with proportion of neurons to drop of 0.3. This choice has also in mind reducing overfit.
 
@@ -45,5 +46,3 @@ To reduce overfitting, some data augmentation was performed on the training data
 # Contributions
 
 Contributions are welcomed!
-
-A good first issue would be finding better model parameters to increse the model's accuracy.
